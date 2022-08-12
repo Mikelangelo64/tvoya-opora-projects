@@ -696,7 +696,7 @@ var node = undefined;
 var slider = undefined;
 
 var window_switcher = function window_switcher() {
-  if (document.documentElement.clientWidth < 768) {
+  if (false) {
     if (!slider) {
       slider = new swiper__WEBPACK_IMPORTED_MODULE_1__["default"](node, {
         modules: [swiper__WEBPACK_IMPORTED_MODULE_1__.Pagination],
@@ -709,7 +709,7 @@ var window_switcher = function window_switcher() {
     }
 
     return;
-  } else if (slider) {
+  } else if (false) {
     slider.destroy(true, true);
     slider = null;
   }
@@ -718,7 +718,7 @@ var window_switcher = function window_switcher() {
 var slider_projects = function slider_projects() {
   node = document.querySelector('.swiper-projects');
 
-  if (!node) {
+  if (true) {
     return;
   }
 
@@ -824,7 +824,7 @@ var node = undefined;
 var slider = undefined;
 
 var window_switcher = function window_switcher() {
-  if (document.documentElement.clientWidth < 768) {
+  if (false) {
     slider = new swiper__WEBPACK_IMPORTED_MODULE_1__["default"](node, {
       modules: [swiper__WEBPACK_IMPORTED_MODULE_1__.Pagination],
       slidesPerView: 'auto',
@@ -834,25 +834,26 @@ var window_switcher = function window_switcher() {
         clickable: true
       }
     });
-  } else {
-    slider = new swiper__WEBPACK_IMPORTED_MODULE_1__["default"](node, {
-      modules: [swiper__WEBPACK_IMPORTED_MODULE_1__.Pagination],
-      slidesPerView: '1',
-      spaceBetween: 24,
-      pagination: {
-        el: '.swiper-pagination-top-projects',
-        clickable: true
-      }
-    });
-  }
+  } 
+  // else {
+  //   slider = new swiper__WEBPACK_IMPORTED_MODULE_1__["default"](node, {
+  //     modules: [swiper__WEBPACK_IMPORTED_MODULE_1__.Pagination],
+  //     slidesPerView: '1',
+  //     spaceBetween: 24,
+  //     pagination: {
+  //       el: '.swiper-pagination-top-projects',
+  //       clickable: true
+  //     }
+  //   });
+  // }
 
-  slider.update();
+  //slider.update();
 };
 
 var slider_top_projects = function slider_top_projects() {
   node = document.querySelector('.swiper-top-projects');
 
-  if (!node) {
+  if (true) {
     return;
   }
 
