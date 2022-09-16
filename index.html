@@ -61,6 +61,19 @@
                     <button class="nav-search-btn" type="submit">Пошук</button>
                 </div>
             </form>
+            <form class="nav-subscribe" method="get" action="">
+                <div class="nav-search-box">
+                    <div class="nav-search-query">
+                        <input type="text" name="q" placeholder="email">
+                    </div>
+
+                    <button class="nav-search-btn" type="submit">
+                        <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.827341 1.30631L7.19141 7.67017L0.827341 14.034" stroke="#fff" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                </div>
+            </form>
         </div>
         <div class="dropdown-nav-menu"><ul class="two-nav-list">
     <li class="two-nav-item hover-active">
@@ -210,7 +223,26 @@
 </div>
 
 </div>
-<section class="container">
+
+<section class="container container__small container__breadcrumbs">
+    <nav class="yoast-breadcrumbs breadcrumbs">
+        <span>
+            <span>
+                <a href="№">Головна</a>
+                 / 
+                 <span>
+                    <a href="#"> Партнери </a>
+                     / 
+                     <span class="breadcrumb_last" aria-current="page">
+                        Alina Sviatnenko
+                    </span>
+                </span>
+            </span>
+        </span>
+    </nav>
+</section>
+
+<section class="container container__small">
     <div class="banner-gradient rounded banner-gradient__projects">
         <div class="banner-gradient__img">
             <img src="./img/content/top-project/0-1270x735.jpg" alt="">
@@ -249,36 +281,87 @@
                     </div>
                 </div>
 
-                <div class="projects-directions-filter">
-                    <div class="projects-directions-filter__item _active-diresctions-item">
-                        <p>Діти сироти</p>
-                    </div>
-                    <div class="projects-directions-filter__item">
-                        <p>Діти з вадами серця</p>
-                    </div>
-                    <div class="projects-directions-filter__item">
-                        <p>Допомога лікарням</p>
-                    </div>
-                    <div class="projects-directions-filter__item">
-                        <p>COVID-19</p>
-                    </div>
-                    <div class="projects-directions-filter__item">
-                        <p>Війна</p>
-                    </div>
-                    <div class="projects-directions-filter__item">
-                        <p>Діти сироти</p>
-                    </div>
-
-                    <a href="#" class="projects-directions-filter__more">
-                        Більше напрямків
-
-                        <svg width="25" height="6" viewBox="0 0 25 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="3.03027" cy="3" r="3" fill="#EE2742"/>
-                            <circle cx="12.4888" cy="3" r="3" fill="#EE2742"/>
-                            <circle cx="21.9473" cy="3" r="3" fill="#EE2742"/>
+                <div class="projects-directions-filter__container">
+                    <div class="projects-directions-filter__close">
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M13.2857 13.2226C13.1295 13.3788 12.8762 13.3788 12.72 13.2226L0.840663 1.34316C0.684454 1.18695 0.684454 0.933683 0.840663 0.777473C0.996872 0.621262 1.25014 0.621263 1.40635 0.777473L13.2857 12.6569C13.4419 12.8131 13.4419 13.0664 13.2857 13.2226Z" fill="#EE2742"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.840706 13.2226C0.996915 13.3788 1.25018 13.3788 1.40639 13.2226L13.2857 1.34316C13.442 1.18695 13.442 0.933683 13.2857 0.777473C13.1295 0.621262 12.8763 0.621263 12.7201 0.777473L0.840705 12.6569C0.684497 12.8131 0.684496 13.0664 0.840706 13.2226Z" fill="#EE2742"/>
                         </svg>
-                    </a>
+                    </div>
+                    <div class="projects-directions-filter">
+                        <div class="projects-directions-filter__item _active-diresctions-item">
+                            <p>Діти сироти</p>
+                        </div>
+                        <div class="projects-directions-filter__item">
+                            <p>Діти з вадами серця</p>
+                        </div>
+                        <div class="projects-directions-filter__item">
+                            <p>Допомога лікарням</p>
+                        </div>
+                        <div class="projects-directions-filter__item">
+                            <p>COVID-19</p>
+                        </div>
+                        <div class="projects-directions-filter__item">
+                            <p>Війна</p>
+                        </div>
+                        <div class="projects-directions-filter__item">
+                            <p>Діти сироти</p>
+                        </div>
+    
+                        <a href="#" class="projects-directions-filter__more">
+                            Більше напрямків
+    
+                            <svg width="25" height="6" viewBox="0 0 25 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="3.03027" cy="3" r="3" fill="#EE2742"/>
+                                <circle cx="12.4888" cy="3" r="3" fill="#EE2742"/>
+                                <circle cx="21.9473" cy="3" r="3" fill="#EE2742"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="projects-directions-filter projects-directions-filter__dop">
+                        <div class="projects-directions-filter__item ">
+                            <p>Діти сироти</p>
+                        </div>
+                        <div class="projects-directions-filter__item">
+                            <p>Діти з вадами серця</p>
+                        </div>
+                        <div class="projects-directions-filter__item">
+                            <p>Допомога лікарням</p>
+                        </div>
+                        <div class="projects-directions-filter__item">
+                            <p>COVID-19</p>
+                        </div>
+                        <div class="projects-directions-filter__item">
+                            <p>Війна</p>
+                        </div>
+                        <div class="projects-directions-filter__item">
+                            <p>Діти сироти</p>
+                        </div>
+    
+                    </div>
+                    <div class="projects-directions-filter projects-directions-filter__dop">
+                        <div class="projects-directions-filter__item ">
+                            <p>Діти сироти</p>
+                        </div>
+                        <div class="projects-directions-filter__item">
+                            <p>Діти з вадами серця</p>
+                        </div>
+                        <div class="projects-directions-filter__item">
+                            <p>Допомога лікарням</p>
+                        </div>
+                        <div class="projects-directions-filter__item">
+                            <p>COVID-19</p>
+                        </div>
+                        <div class="projects-directions-filter__item">
+                            <p>Війна</p>
+                        </div>
+                        <div class="projects-directions-filter__item">
+                            <p>Діти сироти</p>
+                        </div>
+    
+                    </div>
                 </div>
+                
             </div>
             <div class="two-col-body">
                 <p>
@@ -609,7 +692,7 @@
 
 
 
-<div class="container container__small">
+<div class="container container__big">
     <footer class="footer">
         <div class="footer-logo">
             <a href="/" class="footer-logo-pic"><img src="./img/logo-white.svg" alt="Твоя опора"></a>
